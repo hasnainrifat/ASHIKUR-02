@@ -1,0 +1,333 @@
+:root {
+    --font-family: "Poppins", sans-serif;
+    --second-family: "PT Sans", sans-serif;
+    --third-family: "Potta One", sans-serif;
+  }
+  body{
+    font-family: var(--font-family);
+  }
+  nav ul li a{
+    text-transform: uppercase;
+    font-family: var(--font-family);
+    font-weight: 500 !important;
+    font-size: 15px;
+    line-height: 200%;
+    color: #353535 !important;
+    padding: 18px 23px !important;
+    position: relative;
+    display: inline-block;
+  }
+
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    width:0%;
+    height: 2px;
+    background-color:#353535;
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5S;
+}
+nav ul li a:hover::after{
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+}
+nav ul li a::before{
+    content: '';
+    position: absolute;
+    width:0%;
+    height: 2px;
+    background-color:#353535;
+    right:0;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5S; 
+}
+nav ul li a:hover::before{
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+}
+nav .navbar-toggler{
+    border: none;
+    box-shadow: none !important;
+
+}
+  .offcanvas-body ul{
+    list-style-type: none;
+    display: inline-block;
+    
+    
+  }
+  .offcanvas-body ul a{
+    text-decoration: none;
+    color: #353535;
+    padding: 20px;
+    font-family: var(--font-family);
+    text-transform: uppercase;
+    
+    
+  }
+  .offcanvas-body ul a:hover{
+    color: rgba(40, 89, 224, 0.678);
+  }
+  .offcanvas-body ul li{
+    padding: 10px;
+  }
+  @media (max-width: 767.98px)  { 
+    nav{
+        box-shadow: 3px 3px 30px #88888853;
+        padding: 20px 0 !important;
+    }
+}
+
+
+#banner h4{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    color: #353535;
+    }
+    #banner h2{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 64px;
+    color: #353535;
+    }
+    #banner p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+    color: #353535;
+    }
+    #banner .button-grp .button-1{
+        background-color: #ffcc00;
+        display: inline-block;
+        padding: 16px 0 17px 45px;
+        border-radius: 20px;
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 180%;
+        color: #000000;
+        text-decoration: none;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+    #banner .button-grp .button-1 span{
+        padding: 0px 45px 0px 11px;
+        display: inline-block;
+    }
+    #banner .button-grp .button-1:hover{
+        background-color: #ffffff;
+    }
+
+    #banner .button-grp .button-2{
+        display: inline-block;
+        padding: 16px 10px 17px 45px;
+        background-color: #fff;
+        border: 2px solid black;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 180%;
+        color: #000000;
+        text-decoration: none;
+        border-radius: 20px;
+
+    }
+    #banner .button-grp .button-2 span{
+        padding: 0px 45px 0px 11px;
+        display: inline-block;
+    }
+    #banner .button-grp .button-2:hover{
+        background-color: #ffcc00;
+        border-radius: 20px
+    }
+
+    #banner .container .row .col-lg-6 .button-grp{
+        margin-top: 30px;
+    }
+    #banner a{
+        margin: 0px 26.688px 0px 0px;
+    }
+    .follow a{
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 180%;
+        color: #353535;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .follow span{
+        padding: 16px 0px 0px 20px;
+        font-size: 20px;
+    }
+    /*about */
+#about-me{
+    background: linear-gradient(95.13deg ,#FFCC00, #FFF5CB 112.13%);
+}
+.about-tittle h2{
+    color: rgba(53, 53, 53, 1);
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 70px;
+}
+.about-tittle p{
+font-size: 18px;
+font-weight: 400;
+color: rgba(53, 53, 53, 1);
+padding-top: 20px;
+line-height: 180%;
+padding-bottom: 30px;
+}
+#about-me .about-btn{
+    display: inline-block;
+    padding: 16px 45px 17px 45px;
+    border-radius: 20px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 180%;
+    color: #ffffff;
+    text-decoration: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid black;
+    align-items: center;    
+}
+#about-me .about-btn a{
+display: inline-block;
+text-decoration: none;
+color: #000000;
+}
+    /*about end*/
+
+
+   /*frame*/
+.frame{
+    align-items: center;
+    padding: 39px;
+    border-radius: 20px;
+}
+.img-fluid{
+    align-items: center;
+    padding: 0px 138px;
+}
+.frame-body h4{
+    font-weight: 700;
+    font-family:var(--font-family);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 39.6px;
+    text-align: center;
+
+}
+.frame-body p{
+font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+line-height: 30.4px;
+text-align: center;
+}
+.row{
+    margin: 12px 0px;
+}
+  /*frame end*/
+
+
+/*branding*/
+#Branding .container{
+    background: linear-gradient(95.13deg ,#FFCC00, #FFF5CB 112.13%);
+    border-radius: 30px;
+}
+
+.branding-tittle h2{
+    color: rgba(53, 53, 53, 1);
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 70px;
+}
+.branding-tittle p{
+font-size: 18px;
+font-weight: 400;
+color: rgba(53, 53, 53, 1);
+padding-top: 20px;
+line-height: 180%;
+padding-bottom: 30px;
+}
+#Branding .branding-btn .branding-btn1{
+    display: inline-block;
+    padding: 15px 40px 15px 40px;
+    background-color: #fff;
+    border: 2px solid black;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 20px;
+    align-items: center;
+}
+#Branding .branding-btn .branding-btn1:hover{
+    background-color: #ffcc00;
+    border-radius: 20px
+}
+/*branding end*/
+
+
+/*service*/
+#service{
+ background: #FFF7D5;
+}
+#service .container{
+    padding: 71px;
+}
+#service .container p{
+    padding: 13px;
+}
+#service h2{
+    font-family:var(--second-family);
+font-size: 50px;
+font-weight: 700;
+line-height: 64.7px;
+text-align: center;
+
+}
+#service p{
+    font-family:var(--font-family);
+font-size: 18px;
+font-weight: 400;
+line-height: 32.4px;
+text-align: center;
+
+}
+ .services-1{
+    align-items: center;
+    padding: 26px;
+    background-color: #ffffff;
+    flex-direction: column;
+   display: flex; 
+ }
+
+.service-1{
+   background-color: #fff;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+}
+.service-body{
+    align-items: center;
+}
+.service-body h3{
+    align-items: center;
+    padding: 13px 4px 8px 29px;
+}
+/*service end*/
+
